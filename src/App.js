@@ -1,35 +1,65 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 import About from './components/about.js';
+import Contact from './components/contact.js';
 import ProjectContainer from './components/projects.js';
 
-const MainTitle = () => <h1>'dont texas my california, person'</h1>;
+import './App.css';
 
-class NavBar extends Component {
+const MainTitle = () => <h1 className="main-title">Jennifer Dixon</h1>;
+
+const IntroBlurb = () => (
+  <h6 className="intro-blurb">
+    I'm a software engineer in the SF Bay Area from a non-traditional, working-class background.
+  </h6>
+);
+
+
+class HomePage extends Component {
   render() {
     return (
-      <div className="nav-bar" >
+      <div className="home-div">
+
+        <nav id="nav-menu justify-content-center">
+          <ul className="nav justify-content-center" id="nav-bar">
+            <li className="nav-item" id="1"><a className="nav-link" href="/projects">Projects</a></li>
+    	      <li className="nav-item" id="2"><a className="nav-link" href="/about">About</a></li>
+            <li className="nav-item" id="4">
+              {Contact}
+            </li>
+        	</ul>
+        </nav>
+
         <MainTitle />
-        <ul className="nav-menu" >
-          <li><NavLink to="/about">About</NavLink></li>
-          <li><NavLink to="/projects">Projects</NavLink></li>
-        </ul>
+        <IntroBlurb />
+
       </div>
     )
   }
 };
 
+
+// To add: <Route path="resume" component={Resume} />
 export default class App extends Component {
   render() {
     return (
       <Router>
         <div>
-          <Route exact path="/" component={NavBar}/> 
+          <Route exact path="/" component={HomePage}/>
           <Route path="/about" component={About}/>
           <Route path="/projects" component={ProjectContainer}/>
+          <Route path="/contact" component={Contact} />
+          <Route path="/discover-bloom" component={() => window.location = 'https://discoverbloom.com/learn'} />
         </div>
       </Router>
-    ) 
+    )
   }
-
 }
+
+
+// <footer className="fixed-bottom" id="footer-contact-info">
+//    <ul className="nav justify-content-end" id="contact">
+//        <li className="nav-item"><a className="nav-link" href="/mailto:jen.dxon@gmail.com">email</a></li>
+//        <li className="nav-item"><a className="nav-link" href="/https://github.com/jennifro">github.com/jennifro</a></li>
+//    </ul>
+// </footer>
