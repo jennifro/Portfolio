@@ -16,6 +16,22 @@ const IntroBlurb = () => (
 
 
 class HomePage extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      isModalOpen: false
+    }
+
+    this.toggleModal = this.toggleModal.bind(this);
+  }
+
+  toggleModal() {
+    this.setState({
+      isModalOpen: !this.state.isModalOpen
+    })
+  }
+
   render() {
     return (
       <div className="home-div">
@@ -24,8 +40,8 @@ class HomePage extends Component {
           <ul className="nav justify-content-center" id="nav-bar">
             <li className="nav-item" id="1"><a className="nav-link" href="/projects">Projects</a></li>
     	      <li className="nav-item" id="2"><a className="nav-link" href="/about">About</a></li>
-            <li className="nav-item" id="4">
-              {Contact}
+            <li className="nav-item" id="4" onClick={this.toggleModal} >
+              <a className="nav-link" href="/contact">Contact</a>
             </li>
         	</ul>
         </nav>
