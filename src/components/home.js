@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Button, Modal } from 'react-bootstrap';
 
 import Contact from './contact';
 import './home.css'
@@ -42,12 +43,14 @@ class ModalToggle extends Component {
 
   render() {
 
+    const ModalContent = this.props.modalContent
+
     return (
       <div>
-        <button onClick={this.toggleModal}>{this.props.modalBtnLabel}</button>
-        <div>
-          {this.props.modal}
-        </div>
+        <Button onClick={this.toggleModal}>{this.props.modalBtnLabel}</Button>
+        <Modal show={this.state.isModalOpen}>
+          <Modal.Body><ModalContent /></Modal.Body>
+        </Modal>
       </div>
     )
   }
@@ -72,7 +75,7 @@ class HomePage extends Component {
               <a className="nav-link" href="/about">About</a>
             </li>
             <li className="nav-item" id="3" >
-              <ModalToggle modal={Contact} modalBtnLabel="Contact" />
+              <ModalToggle modalContent={Contact} modalBtnLabel="Contact" />
             </li>
         	</ul>
         </nav>
