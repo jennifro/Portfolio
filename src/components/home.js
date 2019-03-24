@@ -42,7 +42,10 @@ class ModalToggle extends Component {
 
     return (
       <div>
-        <Button onClick={this.toggleModal}>{this.props.modalBtnLabel}</Button>
+        <Button onClick={this.toggleModal}
+          variant="outline-secondary" className="modal-btn" >
+          {this.props.modalBtnLabel}
+        </Button>
         <Modal show={this.state.isModalOpen} onHide={this.handleModalClose} >
           <Modal.Header closeButton >
             <Modal.Title>{this.props.modalTitle}</Modal.Title>
