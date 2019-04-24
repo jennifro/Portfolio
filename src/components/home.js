@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
-import { Button, Modal } from 'react-bootstrap';
+import { Button, Modal, ButtonToolbar } from 'react-bootstrap';
 
 import Contact from './contact';
+import ProjectContainer from './projects';
+import About from './about';
+
 import './home.css'
 
 
-const MainTitle = () => <h1 className="main-title">Jennifer Dixon</h1>;
+const MainTitle = () => <p className="main-title">Jennifer Dixon</p>;
 
 const IntroBlurb = () => (
   <h5 className="intro-blurb">
@@ -43,13 +46,21 @@ class ModalToggle extends Component {
 
   render() {
 
-    const ModalContent = this.props.modalContent
+    const ModalContent = this.props.modalContent;
 
     return (
       <div>
-        <Button onClick={this.toggleModal}>{this.props.modalBtnLabel}</Button>
-        <Modal show={this.state.isModalOpen}>
-          <Modal.Body><ModalContent /></Modal.Body>
+        <Button onClick={this.toggleModal}
+          variant="outline-secondary" className="modal-btn" >
+          {this.props.modalBtnLabel}
+        </Button>
+        <Modal show={this.state.isModalOpen} onHide={this.handleModalClose} >
+          <Modal.Header closeButton >
+            <Modal.Title>{this.props.modalTitle}</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <ModalContent />
+          </Modal.Body>
         </Modal>
       </div>
     )
@@ -68,14 +79,26 @@ class HomePage extends Component {
 
         <nav id="nav-menu justify-content-center">
           <ul className="nav justify-content-center" id="nav-bar">
-            <li className="nav-item" id="1">
-              <a className="nav-link" href="/projects">Projects</a>
+            <li className="nav-item justify-content-center" id="proj">
+              <ModalToggle
+                modalContent={ProjectContainer}
+                modalBtnLabel="Projects"
+                modalTitle="Apps & Projects by Jennifer"
+              />
             </li>
-    	      <li className="nav-item" id="2">
-              <a className="nav-link" href="/about">About</a>
+    	      <li className="nav-item" id="abt">
+              <ModalToggle
+                modalContent={About}
+                modalBtnLabel="About"
+                modalTitle="About Jennifer"
+              />
             </li>
-            <li className="nav-item" id="3" >
-              <ModalToggle modalContent={Contact} modalBtnLabel="Contact" />
+            <li className="nav-item" id="cont">
+              <ModalToggle
+                modalContent={Contact}
+                modalBtnLabel="Contact"
+                modalTitle="Contact Jennifer"
+              />
             </li>
         	</ul>
         </nav>

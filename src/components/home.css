@@ -7,9 +7,10 @@
 
 .main-title {
   padding-top: 4vh;
-  padding-bottom: 2vh;
+  /* padding-bottom: 1vh; */
   text-align: center;
   color: rgba(79, 60, 91, 1.0);
+  font-size: 3em;
 }
 
 .intro-blurb {
