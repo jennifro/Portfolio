@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { Button, Modal } from 'react-bootstrap';
 
 import Contact from './contact';
-import About from './about.js';
-import ProjectContainer from './projects.js';
 import './home.css'
 
 
@@ -15,6 +13,18 @@ const IntroBlurb = () => (
   </h5>
 );
 
+// const Modal = ({handleClose, show, children}) => {
+//   const ShowOrHideClsName = show ? "modal display-block" : "modal display-none"
+//
+//   return (
+//     <div className={ShowOrHideClsName} >
+//       <section className="modal-main">
+//         {children}
+//         <button onClick={handleClose}>Close</button>
+//       </section>
+//     </div>
+//   )
+// };
 
 class ModalToggle extends Component {
   constructor(props) {
@@ -25,15 +35,10 @@ class ModalToggle extends Component {
     }
 
     this.toggleModal = this.toggleModal.bind(this);
-    this.handleModalClose = this.handleModalClose.bind(this);
   }
 
   toggleModal() {
     this.setState(prevState => ({ isModalOpen: !prevState.isModalOpen }))
-  }
-
-  handleModalClose() {
-    this.setState({ isModalOpen: false });
   }
 
   render() {
@@ -42,26 +47,18 @@ class ModalToggle extends Component {
 
     return (
       <div>
-        <Button onClick={this.toggleModal}
-          variant="outline-secondary" className="modal-btn" >
-          {this.props.modalBtnLabel}
-        </Button>
-        <Modal show={this.state.isModalOpen} onHide={this.handleModalClose} >
-          <Modal.Header closeButton >
-            <Modal.Title>{this.props.modalTitle}</Modal.Title>
-          </Modal.Header>
-
-          <Modal.Body>
-            <ModalContent />
-          </Modal.Body>
+        <Button onClick={this.toggleModal}>{this.props.modalBtnLabel}</Button>
+        <Modal show={this.state.isModalOpen}>
+          <Modal.Body><ModalContent /></Modal.Body>
         </Modal>
       </div>
     )
   }
 }
 
-
 class HomePage extends Component {
+
+
   render() {
     return (
       <div className="home-div">
@@ -72,28 +69,18 @@ class HomePage extends Component {
         <nav id="nav-menu justify-content-center">
           <ul className="nav justify-content-center" id="nav-bar">
             <li className="nav-item" id="1">
-              <ModalToggle
-                modalContent={ProjectContainer}
-                modalBtnLabel="Projects"
-                modalTitle="Apps & Projects by Jennifer"
-              />
+              <a className="nav-link" href="/projects">Projects</a>
             </li>
     	      <li className="nav-item" id="2">
-              <ModalToggle
-                modalContent={About}
-                modalBtnLabel="About"
-                modalTitle="About Jennifer"
-              />
+              <a className="nav-link" href="/about">About</a>
             </li>
-            <li className="nav-item" id="3">
-              <ModalToggle
-                modalContent={Contact}
-                modalBtnLabel="Contact"
-                modalTitle="Contact Jennifer"
-              />
+            <li className="nav-item" id="3" >
+              <ModalToggle modalContent={Contact} modalBtnLabel="Contact" />
             </li>
         	</ul>
         </nav>
+
+
 
       </div>
     )
