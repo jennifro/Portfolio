@@ -54,7 +54,7 @@ class ModalToggle extends Component {
           variant="outline-secondary" className="modal-btn" >
           {this.props.modalBtnLabel}
         </Button>
-        <Modal show={this.state.isModalOpen} onHide={this.handleModalClose} >
+        <Modal show={this.state.isModalOpen} onHide={this.toggleModal} >
           <Modal.Header closeButton >
             <Modal.Title>{this.props.modalTitle}</Modal.Title>
           </Modal.Header>
@@ -67,9 +67,8 @@ class ModalToggle extends Component {
   }
 }
 
+
 class HomePage extends Component {
-
-
   render() {
     return (
       <div className="home-div">
@@ -102,8 +101,6 @@ class HomePage extends Component {
             </li>
         	</ul>
         </nav>
-
-
 
       </div>
     )
