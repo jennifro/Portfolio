@@ -1,24 +1,17 @@
-.App {
-  text-align: center;
+/* App.css */
+
+/* beige rgb(235 157 130) */
+/* deep purple rgb(29, 0, 41) */
+/* purple rgb(79, 60, 91) */
+/* marigold yellow rgb(184, 134, 11) */
+/* seafoam green rgb(93, 153, 93) */
+/* light purple rgb(79, 60, 91) */
+/* hot purple rgb(139, 59, 116) */
+/* deep pink (191,67, 113) */
+/* rose pink (215, 104, 128) */
+
+.font {
+  color: rgb(79, 60, 91);
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}

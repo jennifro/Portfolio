@@ -1,35 +1,27 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
+import HomePage from './components/home.js';
 import About from './components/about.js';
+import Contact from './components/contact.js';
 import ProjectContainer from './components/projects.js';
 
-const MainTitle = () => <h1>'dont texas my california, person'</h1>;
+import './App.css';
 
-class NavBar extends Component {
-  render() {
-    return (
-      <div className="nav-bar" >
-        <MainTitle />
-        <ul className="nav-menu" >
-          <li><NavLink to="/about">About</NavLink></li>
-          <li><NavLink to="/projects">Projects</NavLink></li>
-        </ul>
-      </div>
-    )
-  }
-};
 
+// To add: <Route path="resume" component={Resume} />
 export default class App extends Component {
   render() {
     return (
       <Router>
         <div>
-          <Route exact path="/" component={NavBar}/> 
+          <Route exact path="/" component={HomePage}/>
           <Route path="/about" component={About}/>
           <Route path="/projects" component={ProjectContainer}/>
+          <Route path="/contact" component={Contact} />
+
         </div>
       </Router>
-    ) 
+    )
   }
-
 }
