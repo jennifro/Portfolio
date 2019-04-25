@@ -30,13 +30,13 @@
 #nav-bar .nav-item {
   display: flex;
   justify-content: center;
-  height: 0;
-  width: 0;
-  line-height: 25vw;
+  /* height: 0;
+  width: 0; */
+  /* line-height: 25vw; */
   margin: 5vh;
-  border-left: 12vw solid transparent;
+  /* border-left: 12vw solid transparent;
   border-right: 12vw solid transparent;
-  border-bottom: 24vw solid rgba(79, 60, 91, 1.0);
+  border-bottom: 24vw solid rgba(79, 60, 91, 1.0); */
   /* border-color: ; */
   /* border-radius: 50%; */
   /* text-align: center;

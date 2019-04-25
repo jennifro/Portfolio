@@ -3,13 +3,13 @@ import React, { Component } from 'react';
 export default class ProjectContainer extends Component {
   render() {
     return (
-      <div className="project-page">
-        <div className="discover-bloom">
+      <div id="projects">
+        <div id="discover-bloom">
           <a href="https://app.discoverbloom.com/">
-            Bloom, online indigenous language learning.
+            Bloom, an indigenous language-learning web app currently offering one level with four chapters in Tsalagi (Cherokee).
           </a>
         </div>
-        <div className='feelin-presidential' >
+        <div id='feelin-presidential' >
           <a href="https://feeling-prez.herokuapp.com/">
             Feeling Presidential, a sentiment analysis project with
             Python's Natural Language Toolkit (NLTK), Flask & d3.js
