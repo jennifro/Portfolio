@@ -1,6 +1,5 @@
 .home-div {
-  height: 100vh;
-  background-color: rgba(79, 60, 91, 0.5);
+  background-color: black;
   margin: auto;
   padding: 10vh;
 }
@@ -9,13 +8,13 @@
   padding-top: 4vh;
   /* padding-bottom: 1vh; */
   text-align: center;
-  color: rgba(79, 60, 91, 1.0);
+  color: beige;
   font-size: 3em;
 }
 
 .intro-blurb {
   text-align: center;
-  color: rgba(79, 60, 91, 1.0);
+  color: beige;
 }
 
 .nav-menu {
@@ -30,27 +29,30 @@
 #nav-bar .nav-item {
   display: flex;
   justify-content: center;
-  /* height: 0;
-  width: 0; */
-  /* line-height: 25vw; */
   margin: 5vh;
-  /* border-left: 12vw solid transparent;
-  border-right: 12vw solid transparent;
-  border-bottom: 24vw solid rgba(79, 60, 91, 1.0); */
-  /* border-color: ; */
-  /* border-radius: 50%; */
-  /* text-align: center;
-  vertical-align: middle; */
   font-size: 2vw;
 }
+
+
+a {
+  color: rgb(191,67, 113); /* deep pink  */
+}
+
+
+a:hover {
+  color: rgb(139, 59, 116) /* hot purple */
+}
+
 
 #proj {
 
 }
 
+
 #abt {
 
 }
+
 
 #cont {
 

@@ -1,0 +1,23 @@
+/* projects.css */
+
+.project-container {
+  display: inline-block;
+  height: 0;
+  width: 0;
+  /* line-height: 25vw; */
+  margin: 5vh;
+  border-left: 12vw solid transparent;
+  border-right: 12vw solid transparent;
+  border-bottom: 24vw solid rgba(191,67, 113, .5);
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.project-container a {
+  color: beige;
+}
+
+.project-container a:hover {
+  color: rgb(191, 67, 113); /* deep pink  */
+}

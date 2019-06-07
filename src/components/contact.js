@@ -7,6 +7,7 @@ export default class Contact extends Component {
   render() {
     return (
       <div id="contact">
+      <h4 className="title">Contact Info</h4>
         <ul className="nav justify-content-center" id="contact">
           <li className="nav-item">
             <a className="nav-link" href="/mailto:jen.dxon@gmail.com">email</a>

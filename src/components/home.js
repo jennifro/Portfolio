@@ -12,7 +12,7 @@ const MainTitle = () => <p className="main-title">Jennifer Dixon</p>;
 
 const IntroBlurb = () => (
   <h5 className="intro-blurb">
-    I'm a full-stack software engineer from a non-traditional background.
+    Full-stack software engineer with a non-traditional background
   </h5>
 );
 
@@ -41,7 +41,9 @@ class HomePage extends Component {
         <IntroBlurb />
         <NavBar />
         <ProjectContainer />
+        <br />
         <About />
+        <br />
         <Contact />
 
 
