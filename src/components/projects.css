@@ -1,20 +1,40 @@
 /* projects.css */
 
 .project-container {
-  display: inline-block;
-  height: 0;
-  width: 0;
+  display: block;
+  justify-content: center;
+  flex-flow: row nowrap;
+  height: auto;
+  width: auto;
   /* line-height: 25vw; */
   margin: 5vh;
-  border-left: 12vw solid transparent;
+  /* border-left: 12vw solid transparent;
   border-right: 12vw solid transparent;
   border-bottom: 24vw solid rgba(191,67, 113, .5);
-  border-radius: 50%;
-  text-align: center;
-  vertical-align: middle;
+  border-radius: 50%; */
+  /* text-align: center; */
+  /* vertical-align: middle; */
 }
 
+#discover-bloom {
+  /* float: left; */
+}
+
+#feelin-presidential {
+  /* float: right; */
+}
+
+.project-container img {
+  width: 47%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 3vw;
+}
 .project-container a {
+  /* display: inline-block; */
+  float: right;
+  width: 47%;
+  word-wrap:normal;
   color: beige;
 }
 

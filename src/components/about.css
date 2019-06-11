@@ -6,6 +6,7 @@ h4.title {
 }
 
 p {
+  clear: both;
   color: beige;
 }
 
