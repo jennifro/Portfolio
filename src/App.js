@@ -13,7 +13,7 @@ import './App.css';
 export default class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename="https://jennifro.github.io">
         <div>
           <Route exact path="/" component={HomePage}/>
           <Route path="/about" component={About}/>
