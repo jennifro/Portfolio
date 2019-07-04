@@ -4,22 +4,26 @@ import CareerBio from './bios/careerbio.js';
 import VolunteerBio from './bios/volunteerbio.js';
 import PersonalBio from './bios/personalbio.js';
 
+import './about.css';
 
-const CareerAbout = () => <p>{CareerBio}</p>;
-const VolunteerAbout = () => <p>{VolunteerBio}</p>
-const PersonalAbout = () => <p>{PersonalBio}}</p>
+
+// const CareerAbout = () => <p id='career-bio'>{CareerBio}</p>;
+// const VolunteerAbout = () => <p>{VolunteerBio}</p>
+const PersonalAbout = () => <p>{PersonalBio}</p>
 
 
 export default class About extends Component {
 
     render() {
         return (
-            <div className="about-container">
-                <h4>Work Experience</h4>
-                <CareerAbout />
-                <h4>Volunteer Experience</h4>
-                <VolunteerAbout />
-                <h4>Just Jennifer</h4>
+            <div className="about-container" id="about">
+                <h2 className="title">Work Experience</h2>
+                <CareerBio />
+                <br />
+                <h2 className="title">Volunteer Experience</h2>
+                <VolunteerBio />
+                <br />
+                <h2 className="title">Just Jennifer</h2>
                 <PersonalAbout />
             </div>
         )

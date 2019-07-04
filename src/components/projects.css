@@ -1,0 +1,52 @@
+/* projects.css */
+
+
+.project-container {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  /* height: auto;
+  width: auto; */
+  margin: 5vh;
+}
+
+#discover-bloom {
+  align-self: stretch;
+}
+
+#feelin-presidential {
+  /* float: right; */
+}
+
+#databayes {
+
+}
+
+
+.project-container p {
+align-items: baseline;
+align-self: baseline;
+
+}
+
+.project-container img {
+  width: 47%;
+  flex-grow: 1;
+  order: 1;
+  height: auto;
+  margin: auto;
+  margin-bottom: 3vw;
+}
+
+.project-container a {
+  /* display: inline-block; */
+  float: right;
+  width: 47%;
+  word-wrap:normal;
+  color: rgb(191, 67, 113); /* deep pink  */;
+}
+
+.project-container a:hover {
+  color: rgb(212, 206, 219) /* light purple */
+}
+
