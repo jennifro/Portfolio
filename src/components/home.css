@@ -1,5 +1,5 @@
 .home-div {
-  background-color: black;
+  background-color: #170b29;
   margin: auto;
   padding: 10vh;
 }
@@ -8,23 +8,19 @@
   padding-top: 4vh;
   /* padding-bottom: 1vh; */
   text-align: center;
-  color: beige;
+  color: #fffbd4;
   font-size: 3em;
 }
 
 .intro-blurb {
   text-align: center;
-  color: beige;
+  color: #fffbd4;
 }
 
-.nav-menu {
-
+nav {
+  margin-top: 7vh;
+  margin-bottom: 10vh;
 }
-
-.nav {
-
-}
-
 
 #nav-bar .nav-item {
   display: flex;
@@ -33,14 +29,13 @@
   font-size: 2vw;
 }
 
-
 a {
   color: rgb(191,67, 113); /* deep pink  */
 }
 
 
 a:hover {
-  color: rgb(139, 59, 116) /* hot purple */
+  color: rgb(212, 206, 219) /* light purple */
 }
 
 

@@ -1,12 +1,12 @@
 /* about.css */
 
-h4.title {
+h2.title {
   text-align: center;
-  color: rgb(191, 67, 113);
+  color: #b1a4bd;
 }
 
 p {
   clear: both;
-  color: beige;
+  color: #fffbd4;
 }
 

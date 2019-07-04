@@ -17,13 +17,13 @@ export default class About extends Component {
     render() {
         return (
             <div className="about-container" id="about">
-                <h4 className="title">Work Experience</h4>
+                <h2 className="title">Work Experience</h2>
                 <CareerBio />
                 <br />
-                <h4 className="title">Volunteer Experience</h4>
+                <h2 className="title">Volunteer Experience</h2>
                 <VolunteerBio />
                 <br />
-                <h4 className="title">Just Jennifer</h4>
+                <h2 className="title">Just Jennifer</h2>
                 <PersonalAbout />
             </div>
         )
