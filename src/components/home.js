@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Button, Modal, ButtonToolbar } from 'react-bootstrap';
 
 import Contact from './contact';
 import ProjectContainer from './projects';
@@ -54,43 +53,4 @@ class HomePage extends Component {
 
 
 export default HomePage;
-
-
-// class ModalToggle extends Component {
-//   constructor(props) {
-//     super(props);
-//
-//     this.state = {
-//       isModalOpen: false
-//     }
-//
-//     this.toggleModal = this.toggleModal.bind(this);
-//   }
-//
-//   toggleModal() {
-//     this.setState(prevState => ({ isModalOpen: !prevState.isModalOpen }))
-//   }
-//
-//   render() {
-//
-//     const ModalContent = this.props.modalContent;
-//
-//     return (
-//       <div>
-//         <Button onClick={this.toggleModal}
-//           variant="outline-secondary" className="modal-btn" >
-//           {this.props.modalBtnLabel}
-//         </Button>
-//         <Modal show={this.state.isModalOpen} onHide={this.toggleModal} >
-//           <Modal.Header closeButton >
-//             <Modal.Title>{this.props.modalTitle}</Modal.Title>
-//           </Modal.Header>
-//           <Modal.Body>
-//             <ModalContent />
-//           </Modal.Body>
-//         </Modal>
-//       </div>
-//     )
-//   }
-// }
 
