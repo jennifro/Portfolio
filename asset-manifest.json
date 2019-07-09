@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "www.jendixon.net/static/css/main.026588af.chunk.css",
-    "main.js": "www.jendixon.net/static/js/main.5b40c94a.chunk.js",
-    "main.js.map": "www.jendixon.net/static/js/main.5b40c94a.chunk.js.map",
-    "runtime~main.js": "www.jendixon.net/static/js/runtime~main.04236120.js",
-    "runtime~main.js.map": "www.jendixon.net/static/js/runtime~main.04236120.js.map",
-    "static/js/2.e45ec563.chunk.js": "www.jendixon.net/static/js/2.e45ec563.chunk.js",
-    "static/js/2.e45ec563.chunk.js.map": "www.jendixon.net/static/js/2.e45ec563.chunk.js.map",
-    "index.html": "www.jendixon.net/index.html",
-    "precache-manifest.bff72ac2d3cc6ec24d0e6e88f39d9760.js": "www.jendixon.net/precache-manifest.bff72ac2d3cc6ec24d0e6e88f39d9760.js",
-    "service-worker.js": "www.jendixon.net/service-worker.js",
-    "static/css/main.026588af.chunk.css.map": "www.jendixon.net/static/css/main.026588af.chunk.css.map",
-    "static/media/bloom-sample.gif": "www.jendixon.net/static/media/bloom-sample.fbe37757.gif",
-    "static/media/databayes.gif": "www.jendixon.net/static/media/databayes.9415d5ea.gif",
-    "static/media/feeling-prez-sample.gif": "www.jendixon.net/static/media/feeling-prez-sample.e0d22978.gif"
+    "main.css": "/Portfolio/static/css/main.026588af.chunk.css",
+    "main.js": "/Portfolio/static/js/main.2833300f.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.2833300f.chunk.js.map",
+    "runtime~main.js": "/Portfolio/static/js/runtime~main.132fbc8c.js",
+    "runtime~main.js.map": "/Portfolio/static/js/runtime~main.132fbc8c.js.map",
+    "static/js/2.e45ec563.chunk.js": "/Portfolio/static/js/2.e45ec563.chunk.js",
+    "static/js/2.e45ec563.chunk.js.map": "/Portfolio/static/js/2.e45ec563.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "precache-manifest.63192997790abb228ad9b105ceeac40d.js": "/Portfolio/precache-manifest.63192997790abb228ad9b105ceeac40d.js",
+    "service-worker.js": "/Portfolio/service-worker.js",
+    "static/css/main.026588af.chunk.css.map": "/Portfolio/static/css/main.026588af.chunk.css.map",
+    "static/media/bloom-sample.gif": "/Portfolio/static/media/bloom-sample.fbe37757.gif",
+    "static/media/databayes.gif": "/Portfolio/static/media/databayes.9415d5ea.gif",
+    "static/media/feeling-prez-sample.gif": "/Portfolio/static/media/feeling-prez-sample.e0d22978.gif"
   }
 }
