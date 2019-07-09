@@ -7,13 +7,10 @@ import PersonalBio from './bios/personalbio.js';
 import './about.css';
 
 
-// const CareerAbout = () => <p id='career-bio'>{CareerBio}</p>;
-// const VolunteerAbout = () => <p>{VolunteerBio}</p>
 const PersonalAbout = () => <p>{PersonalBio}</p>
 
 
 export default class About extends Component {
-
     render() {
         return (
             <div className="about-container" id="about">

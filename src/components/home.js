@@ -8,7 +8,7 @@ import About from './about';
 import './home.css'
 
 
-const MainTitle = () => <p className="main-title">Jennifer Dixon</p>;
+const MainTitle = () => <p className="main-title" >Jennifer Dixon</p>;
 
 const IntroBlurb = () => (
   <h5 className="intro-blurb">

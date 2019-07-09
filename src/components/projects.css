@@ -24,13 +24,12 @@
 
 
 .project-container p {
-align-items: baseline;
-align-self: baseline;
-
+  align-self: center;
+  text-align: center;
 }
 
 .project-container img {
-  width: 47%;
+  width: 40%;
   flex-grow: 1;
   order: 1;
   height: auto;
@@ -39,10 +38,7 @@ align-self: baseline;
 }
 
 .project-container a {
-  /* display: inline-block; */
-  float: right;
-  width: 47%;
-  word-wrap:normal;
+  align-self: center;
   color: rgb(191, 67, 113); /* deep pink  */;
 }
 

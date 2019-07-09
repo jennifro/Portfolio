@@ -1,5 +1,5 @@
 .home-div {
-  background-color: #170b29;
+  background-color: #000000;
   margin: auto;
   padding: 10vh;
 }
@@ -9,7 +9,7 @@
   /* padding-bottom: 1vh; */
   text-align: center;
   color: #fffbd4;
-  font-size: 3em;
+  font-size: 4.5em;
 }
 
 .intro-blurb {

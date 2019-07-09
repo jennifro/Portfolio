@@ -15,7 +15,7 @@ export default class App extends Component {
     return (
       <Router basename={process.env.PUBLIC_URL} >
         <div>
-          <Route exact path="/" component={HomePage}/>
+          <Route path="/" component={HomePage}/>
           <Route path="/about" component={About}/>
           <Route path="/projects" component={ProjectContainer}/>
           <Route path="/contact" component={Contact} />

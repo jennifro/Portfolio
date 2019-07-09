@@ -6,6 +6,7 @@ h2.title {
 }
 
 p {
+  text-align: center;
   clear: both;
   color: #fffbd4;
 }
