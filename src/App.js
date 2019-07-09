@@ -9,17 +9,15 @@ import ProjectContainer from './components/projects.js';
 import './App.css';
 
 
-// To add: <Route path="resume" component={Resume} />
 export default class App extends Component {
   render() {
     return (
       <Router basename={process.env.PUBLIC_URL} >
         <div>
-          <Route exact strict path="/" component={HomePage}/>
-          <Route path="/about" component={About}/>
-          <Route path="/projects" component={ProjectContainer}/>
+          <Route exact strict path="/" component={HomePage} />
+          <Route path="/about" component={About} />
+          <Route path="/projects" component={ProjectContainer} />
           <Route path="/contact" component={Contact} />
-
         </div>
       </Router>
     )
